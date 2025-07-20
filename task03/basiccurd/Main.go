@@ -75,7 +75,7 @@ func handleTransaction() {
 		var A, B Account
 		transferTx.Debug().Where("id = ?", 1).Find(&A)
 		if A.Balance < 1000 {
-			return errors.New("Insufficient balance in account A")
+			return errors.New("Insufficient balance in account.png A")
 		} else {
 			A.Balance -= 1000
 		}
